@@ -12,11 +12,13 @@ body{
     font-size: 16px;
 }
 
+@media only screen and (min-width:768px){
 .vertical{
     position: absolute;
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
+}
 }
 
 .btn{
@@ -28,9 +30,6 @@ body{
     opacity: 90%;
 }
 
-.btn:active{
-
-}
 
 .right-col{
     position: relative;
@@ -44,7 +43,6 @@ body{
 
 .form-control{
     font-weight:bold;
-    color:hsl(246, 25%, 77%) ;
 }
 
 .shadows{     
@@ -71,4 +69,19 @@ body{
 .form-footer{
     font-size: 12px;
     text-align: center;
+}
+
+@media only screen and (max-width:768px){
+    *{
+        text-align: center;
+    }
+    .container{
+        padding:70px 28px;
+    }
+    .form-control{
+        text-align: left;
+    }
+    .bottom{
+        text-align: center;
+    }
 }
