@@ -24,6 +24,7 @@ body{
 .btn{
     background-color:  hsl(248, 32%, 49%) ;
     color:white;
+    border: none;
 }
 .btn:hover,.btn:focus{
     background-color:  hsl(248, 32%, 49%);
@@ -41,16 +42,14 @@ body{
     color:hsl(246, 25%, 77%) ;
 }
 
-.form-control{
-    font-weight:bold;
+.form-controls{
+    width:100%;
+    border-radius: 10px;
+    border:none;
 }
 
 .shadows{     
-     box-shadow:  0 1px rgb(218,103,104),
-     0 2px rgb(218,103,104),
-     0 3px rgb(218,103,104),
-     0 4px rgb(218,103,104),
-     0 5px rgb(218,103,104); 
+     box-shadow:0 7px rgb(218,103,104); 
 }
 
 .bottom{
@@ -61,14 +60,20 @@ body{
 .bottom:hover,.bottom:focus{
     background-color: hsl(154, 59%, 51%);
     opacity:80%;
+    color:white;
 }
 
 .terms{
     color:hsl(0, 100%, 74%) ;
+    font-weight: bold;
 }
 .form-footer{
     font-size: 12px;
     text-align: center;
+}
+
+.form-control.is-invalid, .was-validated .form-control:invalid{
+    background-image: url("images/icon-error.svg") ;
 }
 
 @media only screen and (max-width:768px){
